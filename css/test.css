@@ -7,26 +7,44 @@ body{
     width: 100vw;
     display: flex;
 
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    font-weight: normal;
+    font-family: Open Sans;
     color: #fff;
 
-    line-height: 1.6em;
     margin: 0;
 }
 
 img{
-    width: 500px;
-    height: 500px;
+    width: 395.67px;
+    height: 395.67px;
 }
 
-.container{
-    width: 500px;
+.container1{
+    width: 90%;
     margin: auto;
 }
 
-.box-1{
-
+.box1{
+    width: 381px;
+    height: 317px;
 }
+
+.box1Header{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 100%;
+    font-weight: bold;
+
+    width: 379px;
+    height: 168px;
+}
+
+.box1Paragraph{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 100%;
+
+    width: 381px;
+    height: 189px;
+}
+
 
