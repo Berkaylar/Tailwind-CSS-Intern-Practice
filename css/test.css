@@ -20,7 +20,7 @@ body{
     width: 100%;
     max-width: 1400px;
     min-height: 90vh;
-    margin: 30px auto 0;
+    margin: 64px 64px 0;
     padding: 0 2rem 2rem;
 
     display: grid;
@@ -64,10 +64,13 @@ body{
     display: flex;
     flex-direction: column;
     gap: 24px;
+
+    padding-left: 32px;
 }
 
 .cardImage{
     width: 100%;
+    
     aspect-ratio: 1;
     object-fit: cover;
     object-position: center;
