@@ -4,43 +4,48 @@
     box-sizing: border-box;
 }
 
-body{
-    background: linear-gradient(to bottom, #023363, #0055a9);
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-
-    font-family: "Open Sans", sans-serif;
-    color: #fff;
-
+* {
+    padding: 0;
     margin: 0;
 }
 
-.container1{
+/* 
+
+* Update names logical maner
+* irrevelant parts removed
+* reset added
+* moved things around
+
+*/
+
+
+body {
     width: 100%;
-    max-width: 1400px;
-    min-height: 90vh;
-    margin: 64px 64px 0;
-    padding: 0 2rem 2rem;
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+}
 
+.main-wrapper {
+    padding: 4rem;
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    gap: 2rem;
+    grid-template-columns: 1fr 2fr;
+    color: #fff;
+    background: linear-gradient(to bottom, #023363, #0055a9);
 }
 
-.box1{
-    max-width: 381px;
+.slogan-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
 }
 
-.box1Header{
-    font-size: clamp(1.75rem, 4vw, 56px);
+.slogan-header {
+    font-size: 56px;
     font-weight: 700;
-    line-height: 1.2;
-
-    max-width: 379px;
+    line-height: 100%;
 }
 
-.box1Paragraph{
+.slogan-paragraph {
     font-size: clamp(1rem, 1.5vw, 20px);
     font-weight: 600;
     line-height: 1.4;
@@ -48,7 +53,7 @@ body{
     max-width: 381px;
 }
 
-.container3{
+.cards-container {
     width: 100%;
     min-height: 0;
     display: grid;
@@ -58,7 +63,7 @@ body{
     margin-left: 0;
 }
 
-.card{
+.card {
     width: 100%;
     min-width: 0;
     display: flex;
@@ -68,22 +73,22 @@ body{
     padding-left: 32px;
 }
 
-.cardImage{
+.cardImage {
     width: 100%;
-    
+
     aspect-ratio: 1;
     object-fit: cover;
     object-position: center;
     display: block;
 }
 
-.cardHeader{
+.cardHeader {
     font-size: clamp(1.125rem, 2vw, 24px);
     font-weight: 700;
     line-height: 1.2;
 }
 
-.cardParagraph{
+.cardParagraph {
     font-size: clamp(0.9375rem, 1.2vw, 18px);
     font-weight: 400;
     line-height: 1.4;
