@@ -715,11 +715,23 @@ body {
   .sm\:gap-8 {
     gap: 2rem;
   }
+
+  .sm\:gap-12 {
+    gap: 3rem;
+  }
 }
 
 @media (min-width: 768px) {
   .md\:grid-cols-\[1fr_2fr\] {
     grid-template-columns: 1fr 2fr;
+  }
+
+  .md\:gap-12 {
+    gap: 3rem;
+  }
+
+  .md\:gap-0 {
+    gap: 0px;
   }
 
   .md\:p-16 {
