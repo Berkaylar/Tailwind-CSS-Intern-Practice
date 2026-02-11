@@ -50,6 +50,32 @@ npm run watch
 
 ---
 
+## 📂 CSS build yapısı
+
+Projede iki ayrı Tailwind / CSS akışı var:
+
+| Sayfa | Stil dosyası | Kaynak (input) | Build komutu |
+|-------|--------------|----------------|--------------|
+| **index.html** (ana sayfa) | `css/main.css` | `input.css` | `npm run build` / `npm run watch` |
+| **tailwindtest.html** | `css/tailwind-test.css` | `input-test.css` | `npm run build:tailwind-test` / `npm run watch:tailwind-test` |
+| **test.html** | `css/test.css` | Elle yazılmış CSS (Tailwind değil) | — |
+
+- **tailwindtest.html**, Tailwind utility class’ları kullanır ve stilleri **input-test.css**’ten üretilen **tailwind-test.css** ile alır. Bu sayfayı düzgün görmek için önce şu komutu çalıştırın:
+
+  ```bash
+  npm run build:tailwind-test
+  ```
+
+  Geliştirirken değişiklikleri anında yansıtmak için:
+
+  ```bash
+  npm run watch:tailwind-test
+  ```
+
+- **test.html** aynı tasarımı özel class’larla (`main-wrapper`, `card`, vb.) kullanır ve **css/test.css** (Tailwind build değil, manuel CSS) ile çalışır.
+
+---
+
 ## 🎯 Purpose
 
 This project was created for educational purposes to improve practical skills in Tailwind CSS and responsive web design.

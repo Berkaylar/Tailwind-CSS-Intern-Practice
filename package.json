@@ -10,7 +10,9 @@
     "build": "tailwindcss -i ./input.css -o ./css/main.css",
     "watch": "tailwindcss -i ./input.css -o ./css/main.css --watch",
     "build:test": "tailwindcss -i ./input-test.css -o ./css/test.css --config ./tailwind.config.test.js",
-    "watch:test": "tailwindcss -i ./input-test.css -o ./css/test.css --config ./tailwind.config.test.js --watch"
+    "watch:test": "tailwindcss -i ./input-test.css -o ./css/test.css --config ./tailwind.config.test.js --watch",
+    "build:tailwind-test": "tailwindcss -i ./input-test.css -o ./css/tailwind-test.css --config ./tailwind.config.test.js",
+    "watch:tailwind-test": "tailwindcss -i ./input-test.css -o ./css/tailwind-test.css --config ./tailwind.config.test.js --watch"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.19"
