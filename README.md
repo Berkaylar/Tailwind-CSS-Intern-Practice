@@ -50,29 +50,29 @@ npm run watch
 
 ---
 
-## 📂 CSS build yapısı
+## 📂 CSS build structure
 
-Projede iki ayrı Tailwind / CSS akışı var:
+The project uses two separate Tailwind / CSS pipelines:
 
-| Sayfa | Stil dosyası | Kaynak (input) | Build komutu |
-|-------|--------------|----------------|--------------|
-| **index.html** (ana sayfa) | `css/main.css` | `input.css` | `npm run build` / `npm run watch` |
+| Page | Stylesheet | Source (input) | Build command |
+|------|------------|----------------|---------------|
+| **index.html** (main) | `css/main.css` | `input.css` | `npm run build` / `npm run watch` |
 | **tailwindtest.html** | `css/tailwind-test.css` | `input-test.css` | `npm run build:tailwind-test` / `npm run watch:tailwind-test` |
-| **test.html** | `css/test.css` | Elle yazılmış CSS (Tailwind değil) | — |
+| **test.html** | `css/test.css` | Hand-written CSS (not Tailwind) | — |
 
-- **tailwindtest.html**, Tailwind utility class’ları kullanır ve stilleri **input-test.css**’ten üretilen **tailwind-test.css** ile alır. Bu sayfayı düzgün görmek için önce şu komutu çalıştırın:
+- **tailwindtest.html** uses Tailwind utility classes and gets its styles from **tailwind-test.css**, which is built from **input-test.css**. Run this once to view the page correctly:
 
   ```bash
   npm run build:tailwind-test
   ```
 
-  Geliştirirken değişiklikleri anında yansıtmak için:
+  To rebuild automatically while developing:
 
   ```bash
   npm run watch:tailwind-test
   ```
 
-- **test.html** aynı tasarımı özel class’larla (`main-wrapper`, `card`, vb.) kullanır ve **css/test.css** (Tailwind build değil, manuel CSS) ile çalışır.
+- **test.html** implements the same layout with custom classes (`main-wrapper`, `card`, etc.) and uses **css/test.css** (hand-written CSS, not a Tailwind build).
 
 ---
 
